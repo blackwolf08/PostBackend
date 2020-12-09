@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 var UserSchema = new mongoose.Schema({
     enrollment_number: { 
-        type: Number,
+        type: [Number, String],
         unique: true
     },
     username: {
